@@ -34,6 +34,6 @@ int main()
 
 	}
 	std::cout << std::endl;
-
+	std::cout << "==========1월 12일 숙제 끝==========" << std::endl;
 	return 0;
 }
