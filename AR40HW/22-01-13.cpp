@@ -20,12 +20,33 @@ void StringTrimRemove(const char* a, char* b)
     return;
 }
 
+//이건 for문형
+void StringTrimRemove2(const char* a, char* b)
+{
+ 
+    for (int i = 0; i < 10000; ++i)
+    {
+        if (a[i] != ' ')
+        {
+            putchar(a[i]);
+        }
+        if (a[i] == 0) //값이 없다면 반복문 계속돌리지 말고 멈추고 나온다
+        {
+            break;
+        }
+    }
+
+    return;
+}
+
 int main()
 {
-    char Text[10000] = { 0, };
+    char Text[10000] = {0,};
     //Text = "a d dddd";
 
-    StringTrimRemove("아버지가 방에 들어가신다", Text);
+    StringTrimRemove("아버지가 방에 들어가신다\n", Text);
+
+    StringTrimRemove2("내가 만들었지만 내가 만든게 맞나 싶다\n", Text);
     
     // "aaabbbcccddd"
     printf_s(Text);
