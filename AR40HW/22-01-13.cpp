@@ -51,5 +51,4 @@ int main()
     // "aaabbbcccddd"
     printf_s(Text);
 
- 
 }
