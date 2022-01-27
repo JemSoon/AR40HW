@@ -9,26 +9,25 @@ public:
     int Value;
 
 public:
+    MyInt& operator++(const MyInt& _Value)
+    {
+        _Value =_Value +1 ;
+
+        return *this;
+    }
+    //MyInt operator++(int);
+
+public:
     MyInt(int _Value) //생성자 및 초기화
         : Value(_Value)
     {
         
     }
 
-public:
-    MyInt& operator++(const MyInt& _Value);//접두사
-    //MyInt operator++(int);//접미사
 };
 
 //제가 this와 오퍼레이터 구조(인자?)를 잘 이해 못한거 같습니다 좀더 복습해보고 다시
 //만들어 보겠습니다 ㅠㅠ
-
-MyInt& MyInt::operator++(const MyInt& _Value)
-{
-    //뭘 넣어줘야할지 모르겠따..
-    return ;
-}
-
 
 int main()
 {
