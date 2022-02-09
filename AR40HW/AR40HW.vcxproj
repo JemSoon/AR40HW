@@ -154,7 +154,20 @@
     <ClCompile Include="22-01-20.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="22-01-26.cpp" />
+    <ClCompile Include="22-01-26.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CMonster.cpp" />
+    <ClCompile Include="ConsoleMath.cpp" />
+    <ClCompile Include="CPlayer.cpp" />
+    <ClCompile Include="ConsoleScreen.cpp" />
+    <ClCompile Include="TextScreen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMonster.h" />
+    <ClInclude Include="ConsoleMath.h" />
+    <ClInclude Include="CPlayer.h" />
+    <ClInclude Include="TextScreen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
