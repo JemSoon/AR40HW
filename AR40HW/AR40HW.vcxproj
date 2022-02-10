@@ -158,14 +158,20 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="CMonster.cpp" />
+    <ClCompile Include="ConsoleGlobalInst.cpp" />
     <ClCompile Include="ConsoleMath.cpp" />
+    <ClCompile Include="ConsoleObject.cpp" />
     <ClCompile Include="CPlayer.cpp" />
-    <ClCompile Include="ConsoleScreen.cpp" />
+    <ClCompile Include="ConsoleScreen.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="TextScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMonster.h" />
+    <ClInclude Include="ConsoleGlobalInst.h" />
     <ClInclude Include="ConsoleMath.h" />
+    <ClInclude Include="ConsoleObject.h" />
     <ClInclude Include="CPlayer.h" />
     <ClInclude Include="TextScreen.h" />
   </ItemGroup>

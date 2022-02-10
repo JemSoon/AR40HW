@@ -8,44 +8,56 @@
     <ClCompile Include="22-01-20.cpp" />
     <ClCompile Include="22-01-26.cpp" />
     <ClCompile Include="ConsoleScreen.cpp">
-      <Filter>22-02-09</Filter>
+      <Filter>22-02-09~10</Filter>
     </ClCompile>
     <ClCompile Include="CPlayer.cpp">
-      <Filter>22-02-09\Contents</Filter>
+      <Filter>22-02-09~10\Contents</Filter>
     </ClCompile>
     <ClCompile Include="CMonster.cpp">
-      <Filter>22-02-09\Contents</Filter>
+      <Filter>22-02-09~10\Contents</Filter>
     </ClCompile>
     <ClCompile Include="ConsoleMath.cpp">
-      <Filter>22-02-09\Engine</Filter>
+      <Filter>22-02-09~10\Engine</Filter>
     </ClCompile>
     <ClCompile Include="TextScreen.cpp">
-      <Filter>22-02-09\Engine</Filter>
+      <Filter>22-02-09~10\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleGlobalInst.cpp">
+      <Filter>22-02-09~10\Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleObject.cpp">
+      <Filter>22-02-09~10\Engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="22-02-09">
+    <Filter Include="22-02-09~10">
       <UniqueIdentifier>{fa6536c8-34aa-41e8-a76f-1249bf2cf233}</UniqueIdentifier>
     </Filter>
-    <Filter Include="22-02-09\Contents">
+    <Filter Include="22-02-09~10\Contents">
       <UniqueIdentifier>{26a7b508-ce38-4604-8c32-494263b8ce5b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="22-02-09\Engine">
+    <Filter Include="22-02-09~10\Engine">
       <UniqueIdentifier>{02e0f95f-b6a4-4b13-8f9f-90a4b078e7db}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CPlayer.h">
-      <Filter>22-02-09\Contents</Filter>
+      <Filter>22-02-09~10\Contents</Filter>
     </ClInclude>
     <ClInclude Include="CMonster.h">
-      <Filter>22-02-09\Contents</Filter>
+      <Filter>22-02-09~10\Contents</Filter>
     </ClInclude>
     <ClInclude Include="ConsoleMath.h">
-      <Filter>22-02-09\Engine</Filter>
+      <Filter>22-02-09~10\Engine</Filter>
     </ClInclude>
     <ClInclude Include="TextScreen.h">
-      <Filter>22-02-09\Engine</Filter>
+      <Filter>22-02-09~10\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleGlobalInst.h">
+      <Filter>22-02-09~10\Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleObject.h">
+      <Filter>22-02-09~10\Engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
