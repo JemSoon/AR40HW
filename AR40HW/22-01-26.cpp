@@ -11,7 +11,7 @@ public:
 public:
     MyInt& operator++(int _Value)
     {
-        Value = _Value + 1;
+        Value = (Value + _Value) + 1;
 
         return *this;
     }
