@@ -6,16 +6,21 @@
 class MyInt //클래스명
 {
 public:
-    int Value;
+    int Value=0;
 
 public:
-    MyInt& operator++(const MyInt& _Value)
+    MyInt& operator++(int _Value)
     {
-        _Value =_Value +1 ;
+        Value = _Value + 1;
 
         return *this;
     }
-    //MyInt operator++(int);
+    
+    MyInt operator++()
+    {
+        Value = Value + 1;
+        return Value;
+    }
 
 public:
     MyInt(int _Value) //생성자 및 초기화
@@ -31,7 +36,7 @@ public:
 
 int main()
 {
-    int Value = 0; 
+    int Value = 10; 
     int Result = 0;
 
     Result = ++Value;
@@ -39,11 +44,11 @@ int main()
     Result = Value++;
 
 
-    MyInt MyValue = 0;//선언
+    MyInt MyValue = 10;//선언
     MyInt MyResult = 0;//선언
 
     // ++ 쓰지마세요
-    //MyResult = ++MyValue;
+    MyResult = ++MyValue;
 
     int a = 0;
     //MyResult = 0;
