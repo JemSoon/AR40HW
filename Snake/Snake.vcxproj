@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d9534d54-6f14-45e9-ac89-f05597048408}</ProjectGuid>
-    <RootNamespace>AR40HW</RootNamespace>
+    <ProjectGuid>{24811d6d-b9ad-4975-935d-d07c5a7032cf}</ProjectGuid>
+    <RootNamespace>Snake</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>22-02-22(Snake)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,47 +140,73 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="22-01-12.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    <ClCompile Include="Body.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
-    <ClCompile Include="22-01-13.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    <ClCompile Include="ConsoleMath.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
-    <ClCompile Include="22-01-14.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    <ClCompile Include="ConsoleObject.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
-    <ClCompile Include="22-01-17.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    <ClCompile Include="ConsoleRandom.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
-    <ClCompile Include="22-01-20.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="22-01-26.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="22-02-11.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="22-02-15.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="CMonster.cpp" />
-    <ClCompile Include="ConsoleGlobalInst.cpp" />
-    <ClCompile Include="ConsoleMath.cpp" />
-    <ClCompile Include="ConsoleObject.cpp" />
-    <ClCompile Include="CPlayer.cpp" />
     <ClCompile Include="ConsoleScreen.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <SubType>
+      </SubType>
     </ClCompile>
-    <ClCompile Include="TextScreen.cpp" />
+    <ClCompile Include="GameBlock.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GlobalGameLogic.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Head.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Snake.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CMonster.h" />
-    <ClInclude Include="ConsoleGlobalInst.h" />
-    <ClInclude Include="ConsoleMath.h" />
-    <ClInclude Include="ConsoleObject.h" />
-    <ClInclude Include="CPlayer.h" />
-    <ClInclude Include="TextScreen.h" />
+    <ClInclude Include="Body.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ConsoleMath.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ConsoleObject.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ConsoleRandom.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ConsoleScreen.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="GameBlock.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="GlobalGameLogic.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Head.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

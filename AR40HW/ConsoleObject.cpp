@@ -1,6 +1,6 @@
-#include "ConsoleObject.h"
+#include "ConsoleObject1.h"
 
-ConsoleObject::ConsoleObject(
+ConsoleObject1::ConsoleObject1(
 	TextScreen* _Screen,
 	const char* _Text,
 	const ConsoleVector& _Pos
@@ -25,11 +25,11 @@ ConsoleObject::ConsoleObject(
 	}
 }
 
-ConsoleObject::~ConsoleObject()
+ConsoleObject1::~ConsoleObject1()
 {
 }
 
-void ConsoleObject::Render()
+void ConsoleObject1::Render()
 {
 	if (nullptr == Screen_)
 	{

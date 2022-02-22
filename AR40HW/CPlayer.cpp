@@ -4,7 +4,7 @@
 #include <stdlib.h>//exit함수 사용용(개인적으로 추가)
 
 CPlayer::CPlayer(TextScreen* _Screen, const char* _Text)
-	: ConsoleObject(_Screen, _Text, _Screen->GetSize().GetHalfVector())
+	: ConsoleObject1(_Screen, _Text, _Screen->GetSize().GetHalfVector())
 {
 }
 

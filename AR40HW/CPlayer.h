@@ -1,8 +1,8 @@
 #pragma once
-#include "ConsoleObject.h"
+#include "ConsoleObject1.h"
 
 // Ό³Έν :
-class CPlayer : public ConsoleObject
+class CPlayer : public ConsoleObject1
 {
 public:
 	// constrcuter destructer

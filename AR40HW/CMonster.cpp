@@ -1,13 +1,13 @@
 #include "CMonster.h"
 
 CMonster::CMonster()
-	: ConsoleObject(nullptr, nullptr, { 0,0 })
+	: ConsoleObject1(nullptr, nullptr, { 0,0 })
 {
 
 }
 
 CMonster::CMonster(TextScreen* _Screen, const char* _Text, const ConsoleVector& _Vector)
-	: ConsoleObject(_Screen, _Text, _Vector)
+	: ConsoleObject1(_Screen, _Text, _Vector)
 {
 }
 

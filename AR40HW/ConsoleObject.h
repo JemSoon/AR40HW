@@ -3,22 +3,22 @@
 #include "TextScreen.h"
 
 // Ό³Έν :
-class ConsoleObject
+class ConsoleObject1
 {
 public:
 	// constrcuter destructer
-	ConsoleObject(
+	ConsoleObject1(
 		TextScreen* _Screen,
 		const char* _Text,
 		const ConsoleVector& _Pos);
 
-	~ConsoleObject();
+	~ConsoleObject1();
 
 	// delete Function
-	ConsoleObject(const ConsoleObject& _Other) = delete;
-	ConsoleObject(ConsoleObject&& _Other) noexcept = delete;
-	ConsoleObject& operator=(const ConsoleObject& _Other) = delete;
-	ConsoleObject& operator=(ConsoleObject&& _Other) noexcept = delete;
+	ConsoleObject1(const ConsoleObject1& _Other) = delete;
+	ConsoleObject1(ConsoleObject1&& _Other) noexcept = delete;
+	ConsoleObject1& operator=(const ConsoleObject1& _Other) = delete;
+	ConsoleObject1& operator=(ConsoleObject1&& _Other) noexcept = delete;
 
 	ConsoleVector GetPos()
 	{
