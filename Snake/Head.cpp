@@ -1,13 +1,24 @@
 #include "Head.h"
 #include <conio.h>
-#include <iostream>
-#include "GlobalGameLogic.h"
+
 Head::Head()
 {
 }
 
 Head::~Head()
 {
+	std::list<Body*>::iterator BeginIter = AllBody.begin();
+	std::list<Body*>::iterator EndIter = AllBody.end();
+
+	for (; BeginIter != EndIter; ++BeginIter)
+	{
+		if (nullptr == *BeginIter)
+		{
+			continue;
+		}
+		delete* BeginIter;
+		*BeginIter = nullptr;
+	}
 }
 
 
@@ -36,7 +47,8 @@ void Head::Update()
 		break;
 	case 'q':
 	case 'Q':
-		std::cout << "게임 종료";
+		// 무슨일인가가 벌어져서
+		// 게임이 종료된다.
 		Death();
 		return;
 	default:

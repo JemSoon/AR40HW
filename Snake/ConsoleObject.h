@@ -23,7 +23,6 @@ public:
 	ConsoleObject& operator=(const ConsoleObject& _Other) = delete;
 	ConsoleObject& operator=(ConsoleObject&& _Other) noexcept = delete;
 
-
 	inline ConsoleVector GetPos() const
 	{
 		return Pos_;

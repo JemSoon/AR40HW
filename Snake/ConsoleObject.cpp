@@ -26,7 +26,7 @@ ConsoleObject::~ConsoleObject()
 
 void ConsoleObject::Update()
 {
-	return;
+
 }
 
 void ConsoleObject::Render()

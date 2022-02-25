@@ -9,7 +9,6 @@ GlobalGameLogic::GlobalGameLogic()
 
 GlobalGameLogic::~GlobalGameLogic()
 {
-
 }
 
 
@@ -36,7 +35,7 @@ ConsoleObject* GlobalGameLogic::CreateBodyLogic(const ConsoleObject* _Player)
 		}
 	}
 
-	ConsoleRandom Random = ConsoleRandom(time(nullptr));
-	NewBody->Init(AllPos[Random.Next(0, AllPos.size())], "£À");
+	ConsoleRandom Random = ConsoleRandom((unsigned int)time(nullptr));
+	NewBody->Init(AllPos[Random.Next(0, (int)AllPos.size())], "£À");
 	return NewBody;
 }

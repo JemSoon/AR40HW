@@ -13,7 +13,7 @@
 int main()
 {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-	//_CrtSetBreakAlloc(327);
+
 	ConsoleScreen::GetInst().CreateScreen(10, 10, "□");
 
 	ConsoleObject* NewHead = new Head();
@@ -21,7 +21,6 @@ int main()
 
 
 	ConsoleObject* NewBody = GlobalGameLogic::CreateBodyLogic(NewHead);
-
 	while (true)
 	{
 		if (nullptr == NewBody)
@@ -41,27 +40,27 @@ int main()
 
 		if (true == NewHead->GetIsDeath())
 		{
-			delete NewHead;
-			NewHead = nullptr;
 			break;
 		}
 
 		if (NewHead->OverLapCheck(NewBody))
 		{
 			NewHead->OverLap(NewBody);
-			delete NewBody;
 			NewBody = nullptr;
-
-		}
-
-
-		//죽으면 게임종료(Q눌러도 죽은걸로 간주해서 종료)
-		if (NewHead->GetIsDeath() == true)
-		{
-			break;
 		}
 	}
-	delete NewBody;
-	ConsoleScreen::Destroy();
 
+	if (nullptr != NewHead)
+	{
+		delete NewHead;
+		NewHead = nullptr;
+	}
+
+	if (nullptr != NewBody)
+	{
+		delete NewBody;
+		NewBody = nullptr;
+	}
+
+	ConsoleScreen::Destroy();
 }
