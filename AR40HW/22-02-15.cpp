@@ -69,9 +69,35 @@ public:
 
     void ReSize(unsigned int _Size)
     {
-        Release();
-        ArrData_ = new DataType[_Size];
+        int BeforeSize = Size_;
+        int AfterSize = _Size;
+
+        DataType* BeforeValue = ArrData_;
+
+        ArrData_ = new DataType[AfterSize];
         Size_ = _Size;
+
+        if (BeforeSize > AfterSize)
+        {
+            for (int i = 0; i < AfterSize; ++i)
+            {
+                ArrData_[i] = BeforeValue[i];
+            }
+        }
+        if (BeforeSize < AfterSize)
+        {
+            for (int i = 0; i < BeforeSize; ++i)
+            {
+                ArrData_[i] = BeforeValue[i];
+            }
+        }
+
+        if (nullptr != BeforeValue)
+        {
+            delete BeforeValue;
+            BeforeValue = nullptr;
+        }
+ 
     }
 
 public:
@@ -96,43 +122,12 @@ int main()
     // GameArray NewArray2 = GameArray(5);
     GameArray NewArray2 = GameArray(20);
 
-    GameArray Temp = GameArray(20);
-
-    int Size = sizeof(GameArray);
+    NewArray = NewArray2;
 
     for (size_t i = 0; i < NewArray.GetSize(); i++)
     {
-        NewArray[i] = i;
+         std::cout << NewArray[i] << std::endl;
     }
 
-    //(설명)값을 뉴어레이2꺼를 Temp가 임시저장후 리사이즈 후 
-    //다시 Temp에서 꺼내서 뉴어레이2에 넣어주는 방법..? 이게 맞나..?
-    NewArray.AllValueSetting(0);
-    NewArray2.AllValueSetting(2);
-    Temp.AllValueSetting(3);
-
-    Temp = NewArray2;
-    NewArray2 = NewArray;
-    NewArray2 = Temp;
-
-
-    //NewArray2.ReSize(20);
-
-    for (size_t i = 0; i < NewArray2.GetSize(); i++)
-    {
-        std::cout << NewArray2[i] << std::endl;
-    }
-
-
-
-    //int Arr[10];
-    //int Arr2[10];
-
-    //for (size_t i = 0; i < 10; i++)
-    //{
-    //    Arr[i] = Arr2[i];
-    //}
-
-    std::cout << "Hello World!\n";
 }
 
